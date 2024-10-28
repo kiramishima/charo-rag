@@ -1,0 +1,58 @@
+{
+    "requisitos_ingreso": [
+      {
+        "key": "7f4e8d3a1b2c9f5h",
+        "document": "requisitos_ciclo_2024.pdf",
+        "subject": "Acta de nacimiento",
+        "content": "Original o certificada con código QR (Actualizada)"
+      },
+      {
+        "key": "2c9f5h7f4e8d3a1b",
+        "document": "requisitos_ciclo_2024.pdf",
+        "subject": "Identificación oficial",
+        "content": "Copia de INE"
+      },
+      {
+        "key": "5h7f4e8d3a1b2c9f",
+        "document": "requisitos_ciclo_2024.pdf",
+        "subject": "CURP",
+        "content": "Impresa de la RENAPO con fecha de emisión no mayor a 3 meses"
+      },
+      {
+        "key": "1b2c9f5h7f4e8d3a",
+        "document": "requisitos_ciclo_2024.pdf",
+        "subject": "Comprobante de domicilio",
+        "content": "Copia con antigüedad no mayor a 3 meses (agua, luz, predial, gas, teléfono fijo). No se aceptan comprobantes bancarios ni de telefonía móvil"
+      },
+      {
+        "key": "8d3a1b2c9f5h7f4e",
+        "document": "requisitos_ciclo_2024.pdf",
+        "subject": "Certificado de bachillerato",
+        "content": "Original o copia certificada ante notario público. Alternativa: constancia con historial académico sellados y firmados que acrediten conclusión total del bachillerato. No se aceptan constancias con avance inferior al 100%"
+      },
+      {
+        "key": "3a1b2c9f5h7f4e8d",
+        "document": "requisitos_ciclo_2024.pdf",
+        "subject": "Fotografías",
+        "content": "Tres fotografías tamaño infantil, blanco y negro, sin retoque, fondo blanco, vestimenta formal, de frente, rostro serio, orejas y frente descubiertos"
+      },
+      {
+        "key": "4e8d3a1b2c9f5h7f",
+        "document": "requisitos_ciclo_2024.pdf",
+        "subject": "Comprobante de inscripción",
+        "content": "Impresión de todas las hojas del comprobante de inscripción al ciclo escolar 2024-2 en dos juegos por ambos lados, incluyendo el acuse de entrega de documentación"
+      },
+      {
+        "key": "9f5h7f4e8d3a1b2c",
+        "document": "requisitos_ciclo_2024.pdf",
+        "subject": "Autodiagnóstico de Conocimientos",
+        "content": "Acuse de llenado de Autodiagnóstico de Conocimientos Generales (disponible una vez inscrito)"
+      },
+      {
+        "key": "6h7f4e8d3a1b2c9f",
+        "document": "requisitos_ciclo_2024.pdf",
+        "subject": "Autodiagnóstico Médico",
+        "content": "Acuse de llenado de Autodiagnóstico Médico Automatizado (disponible una vez inscrito)"
+      }
+    ]
+  }

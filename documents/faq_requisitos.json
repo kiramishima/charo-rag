@@ -1,0 +1,64 @@
+{
+    "faq_requisitos": [
+      {
+        "key": "7d4e8f3a1b2c9h5k",
+        "document": "requisitos_ciclo_2024.pdf",
+        "question": "¿Qué documentos necesito entregar para el acta de nacimiento?",
+        "answer": "Se requiere el acta de nacimiento original o certificada con código QR, y debe estar actualizada"
+      },
+      {
+        "key": "9h5k7d4e8f3a1b2c",
+        "document": "requisitos_ciclo_2024.pdf",
+        "question": "¿Qué tipo de identificación oficial es aceptada?",
+        "answer": "Se acepta la copia de la credencial INE"
+      },
+      {
+        "key": "2c9h5k7d4e8f3a1b",
+        "document": "requisitos_ciclo_2024.pdf",
+        "question": "¿Qué características debe tener el CURP que presente?",
+        "answer": "Debe ser una CURP impresa de la RENAPO con fecha de emisión no mayor a 3 meses"
+      },
+      {
+        "key": "5k7d4e8f3a1b2c9h",
+        "document": "requisitos_ciclo_2024.pdf",
+        "question": "¿Qué comprobantes de domicilio son válidos y con qué antigüedad?",
+        "answer": "Se aceptan comprobantes de agua, luz, predial, gas o teléfono fijo con antigüedad no mayor a 3 meses. No se aceptan comprobantes bancarios ni de telefonía móvil"
+      },
+      {
+        "key": "1b2c9h5k7d4e8f3a",
+        "document": "requisitos_ciclo_2024.pdf",
+        "question": "Si aún no tengo mi certificado de bachillerato, ¿qué puedo presentar?",
+        "answer": "Puedes presentar una constancia acompañada del historial académico debidamente sellados y firmados que mencionen la conclusión y acreditación total del bachillerato. No se aceptan constancias con avance inferior al 100%"
+      },
+      {
+        "key": "4e8f3a1b2c9h5k7d",
+        "document": "requisitos_ciclo_2024.pdf",
+        "question": "¿Qué características deben tener las fotografías?",
+        "answer": "Se requieren tres fotografías tamaño infantil, en blanco y negro, sin retoque, con fondo blanco, vestimenta formal, de frente, rostro serio, orejas y frente descubiertos"
+      },
+      {
+        "key": "3a1b2c9h5k7d4e8f",
+        "document": "requisitos_ciclo_2024.pdf",
+        "question": "¿Cuántas copias necesito del comprobante de inscripción?",
+        "answer": "Se requieren dos juegos por ambos lados de todas las hojas del comprobante de inscripción al ciclo escolar 2024-2, incluyendo la hoja denominada acuse de entrega de documentación"
+      },
+      {
+        "key": "8f3a1b2c9h5k7d4e",
+        "document": "requisitos_ciclo_2024.pdf",
+        "question": "¿Qué autodiagnósticos debo realizar?",
+        "answer": "Debes realizar el Autodiagnóstico de Conocimientos Generales y el Autodiagnóstico Médico Automatizado. Ambos podrás realizarlos una vez que estés inscrito"
+      },
+      {
+        "key": "6k7d4e8f3a1b2c9h",
+        "document": "requisitos_ciclo_2024.pdf",
+        "question": "Si mi certificado de bachillerato es una copia, ¿cómo debe estar certificada?",
+        "answer": "Si presentas una copia del certificado de bachillerato, debe estar certificada ante notario público"
+      },
+      {
+        "key": "2h5k7d4e8f3a1b2c",
+        "document": "requisitos_ciclo_2024.pdf",
+        "question": "¿En qué momento debo entregar estos documentos?",
+        "answer": "Los documentos deberán entregarse en caso de ser admitido al concluir el programa de ingreso a la Universidad Rosario Castellanos"
+      }
+    ]
+  }
