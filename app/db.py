@@ -8,12 +8,15 @@ tz = ZoneInfo("America/Mexico_City")
 
 
 def get_db_connection():
-    return psycopg2.connect(
-        host=os.getenv("POSTGRES_HOST", "postgres"),
-        database=os.getenv("POSTGRES_DB", "course_assistant"),
-        user=os.getenv("POSTGRES_USER", "your_username"),
-        password=os.getenv("POSTGRES_PASSWORD", "your_password"),
+    conn = psycopg2.connect(
+        host=os.getenv("POSTGRES_HOST", "localhost"),
+        database=os.getenv("POSTGRES_DB", "charo_assistant"),
+        user=os.getenv("POSTGRES_USER", "dbapp"),
+        password=os.getenv("POSTGRES_PASSWORD", "admin"),
+        port=os.getenv("POSTGRES_PORT", "5432")
     )
+    print(conn.encoding)
+    return conn
 
 
 def init_db():
@@ -78,15 +81,15 @@ def save_conversation(conversation_id, question, answer_data, course, timestamp=
                     course,
                     answer_data["model_used"],
                     answer_data["response_time"],
-                    answer_data["relevance"],
-                    answer_data["relevance_explanation"],
+                    "PARTLY_RELEVANT",
+                    "relevance_explanation",
                     answer_data["prompt_tokens"],
                     answer_data["completion_tokens"],
                     answer_data["total_tokens"],
-                    answer_data["eval_prompt_tokens"],
-                    answer_data["eval_completion_tokens"],
-                    answer_data["eval_total_tokens"],
-                    answer_data["openai_cost"],
+                    0,
+                    0,
+                    0,
+                    0,
                     timestamp,
                 ),
             )

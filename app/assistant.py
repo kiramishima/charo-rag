@@ -8,8 +8,8 @@ from elasticsearch import Elasticsearch
 from sentence_transformers import SentenceTransformer
 
 
-ELASTIC_URL = os.getenv("ELASTIC_URL", "http://elasticsearch:9200")
-OLLAMA_URL = os.getenv("OLLAMA_URL", "http://ollama:11434/v1/")
+ELASTIC_URL = os.getenv("ELASTIC_URL", "http://localhost:9200")
+OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434/v1/")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "ollama")
 
 
@@ -20,7 +20,7 @@ openai_client = OpenAI(api_key=OPENAI_API_KEY)
 model = SentenceTransformer("multi-qa-MiniLM-L6-cos-v1")
 
 
-def elastic_search_text(query, topic, index_name="faq_requisitos"):
+def elastic_search_text(query, topic, index_name="urc"):
     search_query = {
         "size": 5,
         "query": {
@@ -41,7 +41,7 @@ def elastic_search_text(query, topic, index_name="faq_requisitos"):
     return [hit["_source"] for hit in response["hits"]["hits"]]
 
 
-def elastic_search_knn(field, vector, topic, index_name="faq_requisitos"):
+def elastic_search_knn(field, vector, topic, index_name="urc"):
     knn = {
         "field": field,
         "query_vector": vector,
@@ -62,7 +62,7 @@ def elastic_search_knn(field, vector, topic, index_name="faq_requisitos"):
 
 def build_prompt(query, search_results):
     prompt_template = """
-    Vas a emular a un usuario que intenta inscribirse a la Universidad Rosario Castellanos.
+    Eres una asistente de la Universidad Rosario Castellanos (URC), ayudas a las personas y alumnos con algunas dudas.
     Responde a la PREGUNTA con hechos basados en el CONTEXTO cuando responda a la PREGUNTA.
 
     PREGUNTA: {question}

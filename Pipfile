@@ -6,13 +6,16 @@ name = "pypi"
 [packages]
 pytest = "*"
 elasticsearch = "*"
-tqdm = "*"
-pandas = "*"
-ipywidgets = "*"
-flash = "*"
-gunicorn = "*"
 sentence-transformers = "*"
+psycopg2-binary = "*"
+python-dotenv = "*"
+tqdm = "*"
 openai = "*"
+pandas = "*"
+scikit-learn = "*"
+ipywidgets = "*"
+flask = "*"
+gunicorn = "*"
 
 [dev-packages]
 

@@ -1,5 +1,6 @@
 services:
   elasticsearch:
+    container_name: elasticsearch
     image: elasticsearch:8.15.3
     environment:
       - discovery.type=single-node
@@ -8,6 +9,8 @@ services:
     ports:
       - "9200:9200"
       - "9300:9300"
+    env_file:
+      - .env
     volumes:
       - postgres_data:/var/lib/postgresql/data
     networks:
@@ -16,21 +19,21 @@ services:
   postgres:
     image: postgres:latest
     container_name: postgres
-    environment:
-      POSTGRES_DB: ${POSTGRES_DB}
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    env_file:
+      - .env
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - urc
   
   ollama:
     build:
       context: .
       dockerfile: images/ollama.Dockerfile
-    environment:
-      DATA_PATH: "data/bq-results-20240829-041517-1724904953827.jsonl"
+    env_file:
+      - .env
     ports:
       - "11434:11434"
     networks:
@@ -40,13 +43,14 @@ services:
     build:
       context: .
       dockerfile: images/app.Dockerfile
-    environment:
-      DATA_PATH: "data/bq-results-20240829-041517-1724904953827.jsonl"
     ports:
-      - "5000:5000"
+      - "9696:9696"
+    env_file:
+      - .env
     depends_on:
       - elasticsearch
       - ollama
+      - postgres
     networks:
       - urc
 
@@ -56,6 +60,8 @@ services:
       - "3000:3000"
     volumes:
       - grafana_data:/var/lib/grafana
+    env_file:
+      - .env
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
       - GF_AUTH_DISABLE_LOGIN_FORM=false
@@ -66,7 +72,6 @@ services:
       - GF_USERS_ALLOW_ORG_CREATE=false
       - GF_USERS_AUTO_ASSIGN_ORG=true
       - GF_USERS_AUTO_ASSIGN_ORG_ROLE=Viewer
-      - GF_SECURITY_SECRET_KEY=${GRAFANA_SECRET_KEY:-your_secret_key_here}
     depends_on:
       - postgres
     networks:
