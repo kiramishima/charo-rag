@@ -3,7 +3,7 @@
 # Problem
 
 Every year, Rosario Castellanos University starts inscriptions for new students, however
-they have a lot of questions about the process, what kind of documents they need, when the convocatory will start, etc. In addition, the URC receive questions from thei students about graduation process, calls for english and french, etc. As a result, Mesa de Ayuda and Scholar control can't handle with all requests.
+they have a lot of questions about the process, what kind of documents they need, when idioms convocatory will start, etc. In addition, the URC receive questions from their students about graduation process, calls for english and french, etc. As a result, Mesa de Ayuda and Scholar control can't handle with all requests.
 
 # Charo
 
@@ -16,4 +16,15 @@ Rosario (aka Charo) was created for help the students and the personal of URC to
 - Terraform
 - Evidently
 - Ollama
+- Pipenv
+
+# Deploy
+
+```sh
+deploy/create-containers.sh
+
+deploy/run_instance.sh
+```
+
+# Demo
 

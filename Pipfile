@@ -4,6 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+pytest = "*"
+elasticsearch = "*"
+tqdm = "*"
+pandas = "*"
+ipywidgets = "*"
+flash = "*"
+gunicorn = "*"
+sentence-transformers = "*"
+openai = "*"
 
 [dev-packages]
 
